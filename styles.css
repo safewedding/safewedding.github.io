@@ -140,26 +140,52 @@ button {
   padding: 0.5rem;
   cursor: pointer;
 }
-/* ========================= MEDIA QUERIES ========================= */
-@media (max-width: 768px) {
-  body {
-      padding: 0 5%;
- }
-  nav ul {
-      flex-direction: column;
-      gap: 1rem;
-      align-items: center;
- }
-  nav a {
-      font-size: 1rem;
- }
-  h1 {
-      font-size: 2.5em;
- }
-  .main-image {
-      max-width: 300px;
- }
+
+/* Milestone Timeline Section */
+.milestone-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
 }
+
+/* Individual Milestone */
+.milestone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Milestone Image */
+.milestone-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Milestone Content */
+.milestone-content {
+  width: 100%;
+}
+
+/* Milestone Title */
+.milestone h3 {
+  font-family: 'Crimson Pro', serif;
+  font-size: 1.8rem;
+  color: #2C5F2D;
+  margin-bottom: 0.5rem;
+}
+
+/* Milestone Paragraph */
+.milestone p {
+  font-family: 'Crimson Pro', serif;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
 /* GIFT PAGE */
 /* Gifts Grid Layout */
 .gifts-grid {
@@ -199,7 +225,9 @@ button {
   background-color: #C49E5E;
   transform: scale(1.05);
 }
-@media (max-width: 480px) {
+
+/* ========================= MEDIA QUERIES ========================= */
+@media (max-width: 768px) {
   body {
       padding: 0 0rem;
  }
@@ -218,6 +246,7 @@ button {
       flex-direction: column;
      /* Empilha os itens */
       gap: 0.5rem;
+      align-items: center;
      /* Menor espaçamento entre os itens */
  }
   nav a {
