@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernanda & Samuel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div style="text-align: center;">
+        <img src="images/lorien-leaf.png" alt="Lórien Leaf" class="header-logo" />
+        <h1>Fernanda & Samuel</h1>
+    </div>
+    <p id="dayCounter" style="text-align: center;" class='counter'></p>
+    <script>
+        const weddingDate = new Date('2025-08-17');
+        const now = new Date();
+        const diff = weddingDate - now;
+        const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+        document.getElementById('dayCounter').textContent = 
+            `17 DE AGOSTO DE 2025 • BRASÍLIA • FALTAM ${daysLeft} DIAS`;
+    </script>
+    <nav class="centered-nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="presentes.html">Nossa História</a></li>
+        <li><a href="https://safehome.notion.site/56d33904cdcb4c65b70341a3e3cd2aa2" target="_blank">Confirmação</a></li>
+        <li><a href="presentes.html">Presentes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <img src="images/us.png" alt="Nós" class="main-image" />
+    <h2 style="text-align: center;  font-family: ElvenCommonSpeak">Prefiro compartilhar uma unica vida ao seu lado do que enfrentar todas as eras deste mundo sozinho</h2>
+    <p class="starting-text">Assim como na Terra Média, grandes aventuras são feitas ao lado daqueles que mais amamos. Estamos muito felizes em compartilhar essa jornada com você!</p>
+    <p class="starting-text">Aqui, você encontrará todas as informações sobre a nossa cerimônia, a festa e como se preparar para esse dia mágico e único.</p>
+    <p class="starting-text">Se você deseja nos presentear, por favor, acesse a página de <a href="presentes.html">presentes</a> para mais informações.</p>
+    </section>
+    <section>
+        <h2 style="text-align: center;">Data e Local</h2>
+        <p style="text-align: center;">A cerimônia será realizada no dia 17 de agosto de 2025, às 11h30.</p>
+        <p style="text-align: center;">Nos encontre no <strong><a href="https://maps.app.goo.gl/na93JyBB2zVvAWi47">Villa Tevere</a></strong>, Brasília.</p>
+        <p style="text-align: center;">Por favor, confirme sua presença acessando a página de <a href="https://safehome.notion.site/56d33904cdcb4c65b70341a3e3cd2aa2" target="_blank">confirmação</a>.</p>
+    </section>
+    <section>
+        <h2 style="text-align: center;">Programa</h2>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead>
+                    <tr>
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left; font-size: 1.2em;">Horário</th>
+                        <th style="padding: 10px; border-bottom: 2px solid #ddd; text-align: left; font-size: 1.2em;">Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">11:00</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Chegada dos convidados</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">11:30</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Início da Cerimônia</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">12:30</td>
+                        <td style="padding: 10px; border-bottom: 1px solid #ddd;">Coquetel e Almoço</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="text-align: center;" class="finishing-text">Deixe sua espada, arco ou machado na entrada e prepare-se para uma tarde inesquecível na Terra Média. Sua presença é fundamental para tornar nosso dia ainda mais especial.</p>
+        <p style="text-align: center;" class="finishing-text">Com carinho, Fernanda & Samuel</p>
+
+        <img src="images/one-ring.png" class="footer-image rotate-animation" alt="">
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Safe Devs</p>
+  </footer>
+</body>
+</html>
