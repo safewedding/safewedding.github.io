@@ -7,10 +7,6 @@
   font-family: 'PartyBusiness';
   src: url('fonts/PartyBusiness-4B0K.ttf') format('truetype');
 }
-@font-face {
-  font-family: 'ElvenCommonSpeak';
-  src: url('fonts/Elvencommonspeak-0WXz.ttf') format('truetype');
-}
 /* ========================= RESET & GLOBAL ========================= */
 * {
   margin: 0;
@@ -123,6 +119,11 @@ p {
   padding: 0 10em;
   font-size: 1.2em;
 }
+.milestone-text {
+  margin: 1em;
+  padding: 0 15em;
+  font-size: 1.2em;
+}
 .finishing-text {
   margin: 3em;
   padding: 0 10em;
@@ -155,12 +156,13 @@ button {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 /* Milestone Image */
 .milestone-image {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -227,7 +229,7 @@ button {
 }
 
 /* ========================= MEDIA QUERIES ========================= */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
       padding: 0 0rem;
  }
@@ -268,7 +270,12 @@ button {
  }
   .starting-text {
       margin: 1em;
-      padding: 0 0em;
+      padding: 0 2em;
+      font-size: 1.2em;
+ }
+  .milestone-text {
+      margin: 1em;
+      padding: 0 2em;
       font-size: 1.2em;
  }
   .finishing-text {
