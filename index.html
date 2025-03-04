@@ -12,24 +12,17 @@
 </head>
 <body>
   <header>
-    <div style="text-align: center;">
-        <img src="images/lorien-leaf.png" alt="Lórien Leaf" class="header-logo" />
+    <div style="text-align: center; padding-top: 2rem; padding-bottom: 1rem">
         <h1>Fernanda & Samuel</h1>
     </div>
-    <p id="dayCounter" style="text-align: center;" class='counter'></p>
-    <script>
-        const weddingDate = new Date('2025-08-17');
-        const now = new Date();
-        const diff = weddingDate - now;
-        const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
-        document.getElementById('dayCounter').textContent = 
-            `17 DE AGOSTO DE 2025 • BRASÍLIA • FALTAM ${daysLeft} DIAS`;
-    </script>
-    <nav class="centered-nav">
+    <nav class="centered-nav" style="padding-bottom: 2rem">
       <ul>
         <li><a href="index.html">Início</a></li>
+        <li style="color:#822E2E">•</li>
         <li><a href="our-story.html">Nossa História</a></li>
+        <li style="color:#822E2E">•</li>
         <li><a href="https://safehome.notion.site/56d33904cdcb4c65b70341a3e3cd2aa2" target="_blank">Confirmação</a></li>
+        <li style="color:#822E2E">•</li>
         <li><a href="presentes.html">Presentes</a></li>
       </ul>
     </nav>
@@ -38,18 +31,61 @@
   <main>
     <section>
         <img src="images/us.png" alt="Nós" class="main-image" />
-      <h2 style="text-align: center; font-family: Lavishly Yours; font-size: 2rem; line-height: 1; margin-top: 2rem;">"Prefiro compartilhar uma única vida ao seu lado do que enfrentar todas as eras deste mundo sozinho."</h2>
-    <div style="margin-top: 4em; margin-bottom: 4em;">
-        <p style="text-align: center" class="starting-text">Assim como na Terra Média, grandes aventuras são feitas ao lado daqueles que mais amamos. Estamos muito felizes em compartilhar essa jornada com você!</p>
-        <p style="text-align: center" class="starting-text">Aqui, você encontrará todas as informações sobre a nossa cerimônia, a festa e como se preparar para esse dia mágico e único.</p>
-        <p style="text-align: center" class="starting-text">Se você deseja nos presentear, por favor, acesse a página de <a href="presentes.html">presentes</a> para mais informações.</p>
+      <h2 class="quote">"Prefiro compartilhar uma única vida ao seu lado a enfrentar todas as eras deste mundo sozinho."</h2>
+      <p id="dayCounter" class="counter"></p>
+
+      <style>
+        .counter {
+          text-align: center;
+          color: #822E2E;
+        }
+      
+        /* Ensure proper formatting on small screens */
+        @media (max-width: 600px) {
+          .counter {
+            white-space: pre-line; /* Allows line breaks */
+            max-width: 300px; /* Restrict width to force text wrapping */
+            margin: auto;
+          }
+        }
+      </style>
+      
+      <script>
+          function updateText() {
+              const weddingDate = new Date('2025-08-17');
+              const now = new Date();
+              const diff = weddingDate - now;
+              const daysLeft = Math.ceil(diff / (1000 * 60 * 60 * 24));
+      
+              let text;
+      
+              // Check screen width and format text accordingly
+              if (window.innerWidth <= 600) {
+                  text = `17 DE AGOSTO DE 2025\n•\nBRASÍLIA\n•\nFALTAM ${daysLeft} DIAS`; // Multi-line format
+              } else {
+                  text = `17 DE AGOSTO DE 2025 • BRASÍLIA • FALTAM ${daysLeft} DIAS`; // Single-line format
+              }
+      
+              document.getElementById('dayCounter').textContent = text;
+          }
+      
+          // Run on page load
+          updateText();
+      
+          // Run on window resize to dynamically adjust the text
+          window.addEventListener('resize', updateText);
+      </script>
+    <div style="margin-top: 3rem; margin-bottom: 3rem;">
+        <p style="text-align: center" class="starting-text">As histórias mais inesquecíveis são vividas ao lado daqueles que amamos. Estamos imensamente felizes em compartilhar esse momento com vocês, nossos companheiros nesta jornada!</p>
+        <p style="text-align: center" class="starting-text">Aqui, você encontrará todas as informações sobre a cerimônia, a celebração e tudo o que precisa para embarcar conosco nesse dia mágico.</p>
+        <p style="text-align: center" class="starting-text">Se você deseja nos presentear, por favor, acesse a <a href="presentes.html">página de presentes</a> para mais detalhes.</p>
     </div>
     </section>
     <section>
         <h2 style="text-align: center;">Data e Local</h2>
-        <p style="text-align: center;">A cerimônia será realizada no dia 17 de agosto de 2025, às 11h30.</p>
-        <p style="text-align: center;">Nos encontre no <strong><a href="https://maps.app.goo.gl/na93JyBB2zVvAWi47">Villa Tevere</a></strong>, Brasília.</p>
-        <p style="text-align: center;">Por favor, confirme sua presença acessando a página de <a href="https://safehome.notion.site/56d33904cdcb4c65b70341a3e3cd2aa2" target="_blank">confirmação</a>.</p>
+        <p style="text-align: center;">No dia 17 de agosto de 2025, às 11h30, nossos destinos se entrelaçam para sempre.</p>
+        <p style="text-align: center;">Nos encontratemos no <strong><a href="https://maps.app.goo.gl/na93JyBB2zVvAWi47">Villa Tevere</a></strong>, em Brasília.</p>
+        <p style="text-align: center;">Por favor, confirme sua presença acessando a <a href="https://safehome.notion.site/56d33904cdcb4c65b70341a3e3cd2aa2" target="_blank">página de confirmação</a>.</p>
     </section>
     <section>
         <h2 style="text-align: center; margin-top: 4rem;">Programa</h2>
@@ -77,10 +113,10 @@
                 </tbody>
             </table>
         </div>
-        <p style="text-align: center;" class="finishing-text">Deixe sua espada, arco ou machado na entrada e prepare-se para uma tarde inesquecível na Terra Média. Sua presença é fundamental para tornar nosso dia ainda mais especial.</p>
+        <p style="text-align: center;" class="finishing-text">Cada um de vocês é parte essencial dessa história. Sua presença tornará esse dia ainda mais especial e inesquecível. </p>
         <p style="text-align: center;" class="finishing-text">Com carinho, Fernanda & Samuel</p>
 
-        <img src="images/one-ring.png" class="footer-image rotate-animation" alt="">
+        <img src="images/lorien-leaf.png" alt="Lórien Leaf" class="footer-logo" />
 
     </section>
   </main>
