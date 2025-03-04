@@ -83,7 +83,7 @@ nav a:hover {
 /* ========================= IMAGES ========================= */
 .footer-logo {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   display: block;
   margin: 0 auto;
   padding: 1rem;
@@ -249,7 +249,7 @@ button {
 /* Gift Title */
 .gift-title {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 1% 0%;
 }
 
 /* Gift Button */
@@ -262,7 +262,7 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Button Hover Effect */
