@@ -326,7 +326,7 @@ button {
 
   .starting-text {
     margin: 1em;
-    padding: 0 2em;
+    padding: 0 0;
     font-size: 1.2em;
   }
 
@@ -337,7 +337,7 @@ button {
   }
 
   .finishing-text {
-    margin: 2em;
+    margin: 1em;
     padding: 0 0em;
     font-size: 1.2em;
   }
